@@ -1,0 +1,55 @@
+{
+	"folders": [
+		{
+			"name": "Calculator project",
+			"path": "../../Calculator project"
+		},
+		{
+			"name": "channel pictures",
+			"path": "../../channel pictures"
+		},
+		{
+			"name": "CodingLab",
+			"path": "../../CodingLab"
+		},
+		{
+			"name": "html",
+			"path": ".."
+		},
+		{
+			"name": "icons",
+			"path": "../../icons"
+		},
+		{
+			"name": "imag",
+			"path": "../../imag"
+		},
+		{
+			"name": "javascript image",
+			"path": "../../javascript image"
+		},
+		{
+			"name": "OldJs",
+			"path": "../../OldJs"
+		},
+		{
+			"name": "practice Rock Pape",
+			"path": "../../practice Rock Pape"
+		},
+		{
+			"name": "scripts",
+			"path": "../../scripts"
+		},
+		{
+			"name": "styles",
+			"path": "../../styles"
+		},
+		{
+			"name": "thumbnails",
+			"path": "../../thumbnails"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}
