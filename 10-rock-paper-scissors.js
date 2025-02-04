@@ -6,22 +6,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 updateScoreElement();
 
-/*
-if (!score) {
-  score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-  };
-}
-*/
-
 let isAutoPlaying = false;
 let intervalId;
 
-//const autoPlay = () => {
 
-//};
 function autoPlay() {
   if (!isAutoPlaying) {
     intervalId = setInterval(() => {
@@ -30,7 +18,6 @@ function autoPlay() {
     }, 1000);
     isAutoPlaying = true;
     
-    // Solution for 12t.
     document.querySelector('.js-auto-play-button')
       .innerHTML = 'Stop Playing';
 
@@ -38,13 +25,11 @@ function autoPlay() {
     clearInterval(intervalId);
     isAutoPlaying = false;
 
-    // Solution for 12t.
     document.querySelector('.js-auto-play-button')
       .innerHTML = 'Auto Play';
   }
 }
 
-// Solution for exercise 12s.
 document.querySelector('.js-auto-play-button')
   .addEventListener('click', () => {
     autoPlay();
@@ -72,17 +57,9 @@ document.querySelector('.js-scissors-button')
       playGame('paper');
     } else if (event.key === 's') {
       playGame('scissors');
-    
-    // Solution for 12u.
     } else if (event.key === 'a') {
       autoPlay();
-    
-    // Solution for 12w.
     } else if (event.key === 'Backspace') {
-      // Solution for 12w.
-      // resetScore();
-
-      // Solution for 12x.
       showResetConfirmation();
     }
   });
@@ -161,7 +138,6 @@ function pickComputerMove() {
   return computerMove;
 }
 
-// Solution for 12v.
 function resetScore() {
   score.wins = 0;
   score.losses = 0;
@@ -170,17 +146,11 @@ function resetScore() {
   updateScoreElement();
 }
 
-// Solution for 12v.
 document.querySelector('.js-reset-score-button')
   .addEventListener('click', () => {
-    // Solution for 12v.
-    // resetScore();
-
-    // Solution for 12x.
     showResetConfirmation();
   });
 
-// Solution for 12x.
 function showResetConfirmation() {
   document.querySelector('.js-reset-confirmation')
     .innerHTML = `
