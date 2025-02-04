@@ -143,8 +143,8 @@ let intervalId;
     document.querySelector('.js-result').innerHTML = result;
   
     document.querySelector('.js-moves').innerHTML = `You
-  <img src="/rock paper scissors/${playerMove}-emoji.png" class="move-icon">
-  <img src="/rock paper scissors/${computerMove}-emoji.png" class="move-icon">
+  <img src="${playerMove}-emoji.png" class="move-icon">
+  <img src="${computerMove}-emoji.png" class="move-icon">
   Computer`;
   }
   
